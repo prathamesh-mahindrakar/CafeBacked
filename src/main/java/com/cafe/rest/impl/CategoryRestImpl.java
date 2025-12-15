@@ -16,6 +16,7 @@ import com.cafe.service.CategoryService;
 import com.cafe.utils.CafeUtils;
 
 @RestController
+@CrossOrigin(origins = "*")
 public class CategoryRestImpl implements CategoryRest {
 
 	@Autowired
@@ -54,3 +55,4 @@ public class CategoryRestImpl implements CategoryRest {
 	
 
 }
+
