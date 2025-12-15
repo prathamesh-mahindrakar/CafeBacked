@@ -13,6 +13,7 @@ import com.cafe.service.DashboardService;
 import com.cafe.utils.CafeUtils;
 
 @RestController
+@CrossOrigin(origins = "*")
 public class DashboardRestImpl implements DashboardRest{
 
 	private DashboardService dashboardService;
@@ -36,3 +37,4 @@ public class DashboardRestImpl implements DashboardRest{
 	}
 
 }
+
