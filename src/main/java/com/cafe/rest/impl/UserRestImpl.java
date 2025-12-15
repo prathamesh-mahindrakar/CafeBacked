@@ -16,6 +16,7 @@ import com.cafe.utils.CafeUtils;
 import com.cafe.wrapper.UserWrapper;
 
 @RestController
+@CrossOrigin(origins = "*")
 public class UserRestImpl implements UserRest {
 
 	
@@ -101,3 +102,4 @@ public class UserRestImpl implements UserRest {
 	}
 	
 }
+
