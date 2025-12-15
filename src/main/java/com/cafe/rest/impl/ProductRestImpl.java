@@ -16,6 +16,7 @@ import com.cafe.utils.CafeUtils;
 import com.cafe.wrapper.ProductWrapper;
 
 @RestController
+@CrossOrigin(origins = "*")
 public class ProductRestImpl implements ProductRest{
 
 	@Autowired
@@ -97,3 +98,4 @@ public class ProductRestImpl implements ProductRest{
 	}
 
 }
+
