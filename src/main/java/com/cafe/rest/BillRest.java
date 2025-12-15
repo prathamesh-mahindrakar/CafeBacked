@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 import com.cafe.POJO.Bill;
 
-@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin(origins = "*")
 @RequestMapping("/bill")
 public interface BillRest {
 	
@@ -32,3 +32,4 @@ public interface BillRest {
 	public ResponseEntity<String> deleteBill(@PathVariable int id);
 	
 }
+
