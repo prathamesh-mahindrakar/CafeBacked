@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 import com.cafe.POJO.Category;
 
-@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin(origins = "*")
 @RequestMapping("/category")
 public interface CategoryRest {
 	
@@ -27,3 +27,4 @@ public interface CategoryRest {
 	@PutMapping("/update")
 	ResponseEntity<String> updateCategory(@RequestBody(required = true) Map<String, String> requestMap);
 }
+
