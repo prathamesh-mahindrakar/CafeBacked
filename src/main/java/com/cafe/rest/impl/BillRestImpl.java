@@ -18,6 +18,7 @@ import com.cafe.service.BillService;
 import com.cafe.utils.CafeUtils;
 
 @RestController
+@CrossOrigin(origins = "*")
 public class BillRestImpl implements BillRest{
 
 	@Autowired
@@ -65,4 +66,5 @@ public class BillRestImpl implements BillRest{
 	}
 
 }
+
 
