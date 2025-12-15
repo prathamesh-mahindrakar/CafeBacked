@@ -17,7 +17,6 @@ import com.cafe.rest.BillRest;
 import com.cafe.service.BillService;
 import com.cafe.utils.CafeUtils;
 
-@CrossOrigin(origins = "http://localhost:4200")
 @RestController
 public class BillRestImpl implements BillRest{
 
@@ -66,3 +65,4 @@ public class BillRestImpl implements BillRest{
 	}
 
 }
+
