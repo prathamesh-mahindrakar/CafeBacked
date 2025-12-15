@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 import com.cafe.wrapper.UserWrapper;
 
-@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin(origins = "*")
 @RequestMapping("/user")
 public interface UserRest {
 	
@@ -38,3 +38,4 @@ public interface UserRest {
 	public ResponseEntity<String> forgetpassword(@RequestBody Map<String, String> requestMap);
 
 }
+
