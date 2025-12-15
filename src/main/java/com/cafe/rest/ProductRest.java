@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 import com.cafe.wrapper.ProductWrapper;
 
-@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin(origins = "*")
 @RequestMapping("/product")
 public interface ProductRest {
 	
@@ -41,3 +41,4 @@ public interface ProductRest {
 	public ResponseEntity<ProductWrapper> getProductById(@PathVariable int id);
 
 }
+
